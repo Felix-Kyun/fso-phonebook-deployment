@@ -6,6 +6,7 @@ import { notFound } from "./middlewares/notFound.middleware.mjs";
 import morgan from "morgan";
 import { morganCustomFormat } from "./misc/morganCustomFormat.mjs";
 import path from "path";
+import cors from "cors";
 
 const __dirname = path.resolve(import.meta.dirname);
 const port = process.env.PORT || 3000;
