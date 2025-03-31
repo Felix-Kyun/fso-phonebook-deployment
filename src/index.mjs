@@ -15,6 +15,7 @@ const frontend = path.join(__dirname, "./../frontend/dist/");
 app.use(express.json());
 app.use(morgan(morganCustomFormat));
 app.use(express.static(frontend));
+app.use(cors());
 // app.use(logger);
 
 app.use("/api/persons", personRouter);
